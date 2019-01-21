@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DAISY | Онлайн магазин</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://file.myfontastic.com/ek3WDn4DqP85BCXwgLRAjf/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="https://api.backendless.com/sdk/js/latest/backendless.min.js"></script>
+    <script src="js/backendless-setup.js"></script>
+    <script src="js/CartManager.js"></script>
+    <script src="js/GoodsManager.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="heading clearfix">
+            <a href="index.html" class="logo">
+                <img class="logo_img" alt="Golden" src="img/header/logo.png">
+            </a>
+
+            <nav>
+                <ul class="menu">
+                    <li class="menu_item"><a id="sale_item" href="goods.html?price-type=sale&good-type=all&good-subtype=all">Распродажа</a></li>
+                    <li class="menu_item"><a href="#">Одежда</a>
+                        <div class="list">
+                            <ul class="list-block">
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=clothes&good-subtype=outerwear">Верхняя одежда</a></li>
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=clothes&good-subtype=dresses">Платья</a></li>
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=clothes&good-subtype=pants">Штаны</a></li>
+                            </ul>
+                            <img class="list_img" alt="Golden" src="img/header/painting.png">
+                        </div>
+                    </li>
+                    <li class="menu_item"><a href="#">Аксессуары</a>
+                        <div class="list">
+                            <ul class="list-block">
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=accessories&good-subtype=bags">Сумки</a></li>
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=accessories&good-subtype=bijouterie">Бижутерия</a></li>
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=accessories&good-subtype=caps">Шапки</a></li>
+                            </ul>
+                            <img class="list_img" alt="Golden" src="img/header/painting.png">
+                        </div>
+                    </li>
+                    <li class="menu_item"><a href="#">Обувь</a>
+                        <div class="list">
+                            <ul class="list-block">
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=shoes&good-subtype=boots">Сапоги</a></li>
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=shoes&good-subtype=slipper">Туфли</a></li>
+                                <li class="list_item"><a href="goods.html?price-type=full&good-type=shoes&good-subtype=shoes">Ботинки</a></li>
+                            </ul>
+                            <img class="list_img" alt="Golden" src="img/header/painting.png">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="icon">
+                <span id="mini-user"><a href="login.html"><i class="icon-user"></i></a></span>
+                <span id="mini-cart"><a href="cart.html"><i class="icon-shopping-cart"></i></a></span>
+                <span id="menu_mobile" class="mobile"></span>
+            </div>
+
+        </div>
+    </header>
+	
+	<section class="cart">
+		<p class="cart_title">ваша корзина</p>
+		<div class="cart_items" id="my-cart">
+		</div>
+
+		<div class="cart_total">
+			<p class="cart_total_title">Итого: 0 ₽</p>
+			<button class="btn cart_total_btn" id="show">Оформить заказ</button>
+
+			<section id="orde">
+				<div class="profile_block orde_block">
+					<p class="profile_block_title">Куда доставить ваш заказ?</p>
+					<div class="profile_block-info">
+		                <input id="orde_fio" class="email_input orde_input" type="text" placeholder="ФИО*" required>
+		                <input id="orde_adress" class="email_input" type="text" placeholder="Адрес*" required>
+		                <input id="orde_flat" class="email_input" type="text" placeholder="Квартира*" required>
+		                <input id="orde_index" class="email_input" type="text" placeholder="Почтовый индекс*" required>
+		                <input id="orde_city" class="email_input" type="text" placeholder="Город*" required>
+		                <input id="orde_numder" class="email_input orde_input" type="text" placeholder="Номер" required>
+						<p class="orde_block_subtitle">*оплата наличными при получении</p>
+					</div>		
+				</div>
+					<button class="new-login btn login_block_form_btn" id="orde_btn">Офоpмить заказ</button>	
+			</section>
+
+
+			<a href="goods.html"><button class="new-login btn login_block_form_btn">Продолжить покупки</button></a>
+		</div>
+	</section>
+
+<script src="js/cart.js"></script>
+
+<footer>
+    <a href="index.html"><img class="logo_footer" alt="Golden" src="img/header/logo.png"></a>
+	<p>© 2019</p>
+</footer>
+
+</body>
+</html>
+
+
+
