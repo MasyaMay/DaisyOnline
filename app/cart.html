@@ -1,0 +1,37 @@
+@@include('header.html')
+	
+	<section class="cart">
+		<p class="cart_title">ваша корзина</p>
+		<div class="cart_items" id="my-cart">
+		</div>
+
+		<div class="cart_total">
+			<p class="cart_total_title">Итого: 0 ₽</p>
+			<button class="btn cart_total_btn" id="show">Оформить заказ</button>
+
+			<section id="orde">
+				<div class="profile_block orde_block">
+					<p class="profile_block_title">Куда доставить ваш заказ?</p>
+					<div class="profile_block-info">
+		                <input id="orde_fio" class="email_input orde_input" type="text" placeholder="ФИО*" required>
+		                <input id="orde_adress" class="email_input" type="text" placeholder="Адрес*" required>
+		                <input id="orde_flat" class="email_input" type="text" placeholder="Квартира*" required>
+		                <input id="orde_index" class="email_input" type="text" placeholder="Почтовый индекс*" required>
+		                <input id="orde_city" class="email_input" type="text" placeholder="Город*" required>
+		                <input id="orde_numder" class="email_input orde_input" type="text" placeholder="Номер" required>
+						<p class="orde_block_subtitle">*оплата наличными при получении</p>
+					</div>		
+				</div>
+					<button class="new-login btn login_block_form_btn" id="orde_btn">Офоpмить заказ</button>	
+			</section>
+
+
+			<a href="goods.html"><button class="new-login btn login_block_form_btn">Продолжить покупки</button></a>
+		</div>
+	</section>
+
+<script src="js/cart.js"></script>
+
+@@include('footer.html')
+
+

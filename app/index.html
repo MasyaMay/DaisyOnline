@@ -1,0 +1,36 @@
+@@include('header.html')
+
+<div class="main"> 
+    <div class="titles">
+        <p class="titles_subject">скидки до 50%</p>
+        <p class="titles_heading">Распродажа</p>
+        <p class="titles_subtitle">КОЛЛЕКЦИЯ ОСЕНЬ-ЗИМА 2018</p>
+        <a href="goods.html"><button class="btn btn_titles">Купить сейчас</button></a>
+    </div>
+</div>
+
+<section>
+    <div class="goods">
+        <p class="goods_heading">Лучший выбор</p>
+        <div class="goods_items" id="good">                    
+        </div>
+    </div>
+</section>
+
+<section>
+    <form class="email">
+            <p class="email_subject">Подпишись на нашу новостную рассылку</p>
+            <p>Узнавай о новых коллекциях первым и получай самую актуальную информацию.</p>
+            <div class="email_block">
+                <input id="indexName" class="name_input" type="text" placeholder="Name">
+                <input id="indexEmail" class="email_input" type="text" placeholder="Email" required>
+                <button type="button" id="btnEmail" class="btn btn_email"><i class="icon-paper-plane-o"></i>Подписаться</button>
+            </div>
+    </form>
+</section>
+
+
+<script src="js/catalogue.js"></script>
+<script src="js/email.js"></script>
+
+@@include('footer.html')

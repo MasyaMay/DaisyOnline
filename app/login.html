@@ -1,0 +1,23 @@
+@@include('header.html')
+	
+	<section class="login-container">
+		<div class="login" id="login-form">
+			<div class="login_block" id="form">
+				<p class="login_title">Войти в систему</p>
+				<form action="" class="login_block_form">
+					<input type="text" id="entranceLogin" class="login_block_form_input" placeholder="Email" required>
+					<input type="password" id="entrancePassword" class="login_block_form_input" placeholder="Пароль" required>
+					<button id="entrance-btn" class="btn login_block_form_btn" type="button">Войти</button>
+				</form>
+			</div>
+			<div class="login_new-user">
+				<p class="login_title">Новый пользователь?</p>
+				<p class="login_new-user_subtitle">Создайте аккаунт и Вы будете первыми узнавать о наших промоакциях и новых лукбуках.</p>
+				<a href="new-user.html"><button class="btn login_new-user_btn">Создать аккаунт</button></a>
+			</div>
+		</div>
+	</section>
+
+<script src="js/login.js"></script>
+
+@@include('footer.html')

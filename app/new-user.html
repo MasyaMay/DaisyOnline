@@ -1,0 +1,18 @@
+@@include('header.html')
+	
+	<section class="login-container login_user-container">
+		<div class="login login_user-block" id="login-form">
+			<p class="login_title">регистрация</p>
+			<form class="login_block_form" id="form_new_user">
+				<input type="text" id="inputFamily" class="login_block_form_input" placeholder="Фамилия">
+				<input type="text" id="inputName" class="login_block_form_input" placeholder="Имя*" required>
+				<input type="tel" id="inputNumber" class="login_block_form_input" placeholder="Номер">
+				<input type="text" id="inputLogin" class="login_block_form_input" placeholder="Email*" required>
+				<input type="password" id="inputPassword" class="login_block_form_input" placeholder="Пароль*" required>
+				<button id="update-btn" class="btn login_block_form_btn" type="button">Создать аккаунт</button>
+			</form>			
+		</div>
+	</section>
+<script src="js/new-user.js"></script>
+
+@@include('footer.html')
